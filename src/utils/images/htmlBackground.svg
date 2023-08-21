@@ -14,6 +14,18 @@
             <rect width="1440" height="560" fill="#ffffff"></rect>
         </mask>
         <style>
+
+            svg{
+                animation: 2s fadeIn ease-in-out;
+            }
+            @keyframes fadeIn{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 100%;
+                }
+            }
             @keyframes float1 {
                     0%{transform: translate(0, 0)}
                     50%{transform: translate(-10px, 0)}

@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="footer-items">
             <ul>
               <li>
-                <Link className="p-color" href="#commands">
+                <Link className="p-color" href="/commands">
                   /commands
                 </Link>
               </li>
@@ -53,8 +53,12 @@ const Footer = () => {
             <Link className="p-color no-decoration" href="#">
               /support
             </Link>
-            <Link className="p-color no-decoration" href="#">
-              /T&C
+            <Link
+              target="_blank"
+              className="p-color no-decoration"
+              href="https://github.com/preetsuthar17/discord-bot-website-template"
+            >
+              /source-code
             </Link>
             <Link className="p-color no-decoration" href="#">
               /privacy

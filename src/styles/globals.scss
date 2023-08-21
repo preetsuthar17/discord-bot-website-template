@@ -4,6 +4,11 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+
+html {
+  background-color: rgb(8, 8, 8) !important;
 }
 
 body {
@@ -14,6 +19,30 @@ body {
   background-image: url("../utils/images/htmlBackground.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  animation: bodyFadeIn 1.2s ease-in-out;
+  -webkit-tap-highlight-color: #08080800;
+}
+
+@keyframes bodyFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
 }
 
 .p-color {
@@ -34,6 +63,7 @@ body {
   cursor: pointer;
   font-weight: normal;
   text-decoration: none;
+  margin: 0.3rem;
   font-size: 18px;
   background-color: #1111128b;
   border: 1px solid rgba(255, 255, 255, 0.1);

@@ -142,3 +142,20 @@ input:checked + .box .box-close {
 input:checked + section.box .box-title:before {
   transform: rotate(90deg);
 }
+
+.about-stats {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .about-stats-card {
+    margin: 1rem;
+    padding: 1rem;
+
+    h4 {
+      font-size: 1.6rem;
+    }
+  }
+}
