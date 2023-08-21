@@ -1,0 +1,29 @@
+.showcase {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 30rem;
+  flex-direction: column;
+  margin: 0.5rem;
+  .showcase-header {
+    font-weight: 900;
+    flex-wrap: wrap;
+    padding: 1rem;
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  p {
+    flex-wrap: wrap;
+    font-size: medium;
+    font-size: 0.9rem;
+  }
+  .showcase-btn {
+    font-size: 1.3rem;
+    margin: 2rem;
+  }
+}

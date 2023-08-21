@@ -1,0 +1,19 @@
+.joinUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 7rem 0;
+  .joinUs-header {
+    h3 {
+      font-size: 1.9rem;
+      margin: 1rem;
+      font-weight: bold;
+    }
+  }
+  .joinUs-para {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+  }
+}

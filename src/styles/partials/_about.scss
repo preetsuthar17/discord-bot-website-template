@@ -1,0 +1,144 @@
+.about-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.9rem;
+  }
+
+  .about-container {
+    padding: 2rem;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 2rem;
+    background-color: #1111128b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+
+    .about-card {
+      h4 {
+        font-weight: normal;
+        font-size: 1.2rem;
+        padding: 0.3rem;
+      }
+      p {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+      }
+      hr {
+        width: 40%;
+        margin: 0.7rem 0.3rem;
+        opacity: 10%;
+      }
+    }
+  }
+}
+
+.accordion {
+  margin: 0.2rem;
+  width: 90%;
+  border-radius: 5px;
+}
+.accordion input {
+  display: none;
+}
+.box {
+  position: relative;
+  background-color: #1111128b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+  height: 64px;
+  margin: 6px 0;
+
+  transition: all 0.15s ease-in-out;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
+header.box {
+  background-color: #1111128b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  z-index: 100;
+  cursor: initial;
+}
+header .box-title {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16pt;
+  cursor: initial;
+}
+.box-title {
+  width: calc(100% - 40px);
+  height: 64px;
+  font-size: 0.9rem;
+  line-height: 64px;
+  padding: 0 20px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.box-content {
+  width: calc(100% - 40px);
+  padding: 30px 20px;
+  font-size: 11pt;
+  display: none;
+
+  ul {
+    list-style: none;
+    margin-left: 1rem;
+    li {
+      padding: 0.2rem 0;
+    }
+  }
+}
+.box-close {
+  position: absolute;
+  height: 64px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none;
+}
+input:checked + .box {
+  height: auto;
+}
+
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+  display: inline-block;
+}
+.arrows section .box-title {
+  padding-left: 44px;
+  width: calc(100% - 64px);
+}
+.arrows section .box-title:before {
+  position: absolute;
+  display: block;
+  content: "\203a";
+  font-size: 18pt;
+  left: 20px;
+  top: -2px;
+  transition: transform 0.15s ease-in-out;
+}
+input:checked + section.box .box-title:before {
+  transform: rotate(90deg);
+}
