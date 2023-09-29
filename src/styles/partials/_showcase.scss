@@ -26,4 +26,8 @@
     font-size: 1.3rem;
     margin: 2rem;
   }
+
+  @media screen and (max-width: 260px){
+    flex-direction: row;
+  }
 }
