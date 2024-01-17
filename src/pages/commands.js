@@ -3,9 +3,16 @@ import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import { motion } from "framer-motion";
+
 export default function Commands() {
   return (
-    <>
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{ opacity: 1 }}
+    >
       <Head>
         <title>Commands | BOT</title>
         <meta
@@ -145,6 +152,6 @@ export default function Commands() {
         </nav>
       </section>
       <Footer />
-    </>
+    </motion.div>
   );
 }
