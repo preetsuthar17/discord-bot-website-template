@@ -11,7 +11,7 @@
     font-weight: 900;
     flex-wrap: wrap;
     padding: 1rem;
-    font-size: 2.6rem;
+    font-size: 4.3rem;
   }
   h2 {
     font-size: 1rem;
@@ -27,7 +27,7 @@
     margin: 2rem;
   }
 
-  @media screen and (max-width: 260px){
+  @media screen and (max-width: 260px) {
     flex-direction: row;
   }
 }
