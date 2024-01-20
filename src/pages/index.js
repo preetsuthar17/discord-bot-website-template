@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>BOT</title>
+        <title>Dani Bot</title>
         <meta
           name="description"
           content="Esta pagina esta hecha por akakixd 🧡"
