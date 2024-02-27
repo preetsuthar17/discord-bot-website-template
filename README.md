@@ -2,6 +2,9 @@
 
 Beautiful website template for your discord bot to get started! Built with NextJs and Love!
 
+
+Open for freelancing work [contact me](mailto: preetsutharxd@gmail.com)
+
   
 ![Fork and use for free forever](https://i.imgur.com/1IZaaOx.png)
 ![Consider giving it star](https://i.imgur.com/2z1J5Hw.png)
